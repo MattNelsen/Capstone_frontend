@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <img src="http://www.southerncrosskitchen.com/shared/images/weeklyspecial/662120/thursday/" alt="" />
     <h1>All Neighborhoods</h1>
     <div v-for="neighborhood in neighborhoods">
       <h2>{{ neighborhood.name }}</h2>
@@ -9,7 +10,11 @@
   </div>
 </template>
 
-<style></style>
+<style>
+img {
+  width: 150px;
+}
+</style>
 
 <script>
 import axios from "axios";

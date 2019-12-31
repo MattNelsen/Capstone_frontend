@@ -25,25 +25,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#">About me</a>
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
@@ -54,6 +35,15 @@
         </form>
       </div>
     </nav>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Welcome to Appy Hour!</h5>
+        <p class="card-text">
+          The place where you want to be after work. Searching for the nearest spot to get that cocktail you've been
+          thinking about all day.
+        </p>
+      </div>
+    </div>
     <router-view />
   </div>
 </template>
