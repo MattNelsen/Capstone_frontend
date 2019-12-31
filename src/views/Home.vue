@@ -3,10 +3,8 @@
     <h1>All Neighborhoods</h1>
     <div v-for="neighborhood in neighborhoods">
       <h2>{{ neighborhood.name }}</h2>
-    </div>
-    <h1>All Bars</h1>
-    <div v-for="bar in bars">
-      <h2>{{ bar.name }}</h2>
+      <button v-on:click="showBar(bar)">Show Bars</button>
+      <div v-if="currentBar === bar"></div>
     </div>
   </div>
 </template>
@@ -21,17 +19,22 @@ export default {
     return {
       message: "Welcome to Appy Hour!!!",
       neighborhoods: [],
-      bars: []
+      currentBar: {}
     };
   },
   created: function() {
     axios.get("/api/neighborhoods").then(response => {
       this.neighborhoods = response.data;
-      axios.get("/api/bars").then(response => {
-        this.bar = response.data;
-      });
     });
   },
-  methods: {}
+  methods: {
+    showBar: function(bar) {
+      if (this.currentBar === bar) {
+        this.currentBar = {};
+      } else {
+        this.currentBar = bar;
+      }
+    }
+  }
 };
 </script>
