@@ -1,72 +1,50 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Appy Hour</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Home
-              <span class="sr-only">(current)</span>
-            </a>
+    <div class="about">
+      <h1>Appy Hour</h1>
+    </div>
+    <header id="header">
+      <nav id="nav">
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">About me</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About me</a>
+          <li>
+            <a href="#">Neighborhoods</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <li>
+            <a href="#">Bars</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Welcome to Appy Hour!</h5>
-        <p class="card-text">
-          The place where you want to be after work. Searching for the nearest spot to get that cocktail you've been
-          thinking about all day.
-        </p>
-      </div>
-    </div>
+      </nav>
+      <!-- ... -->
+    </header>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmYpY_4ygW5LwbCx9l0pchLCrG5oOAhK3eSmFDkFcCN6Ikk-nu&s"
+      alt=""
+    />
+    <!--/header-->
+
     <router-view />
+
+    <footer id="footer" class="midnight-blue">
+      <!-- ... -->
+    </footer>
+    <!--/#footer-->
   </div>
 </template>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+h1 {
+  color: tan;
+  font-family: Arial Narrow, Arial, sans-serif;
+  font-stretch: expanded;
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 </style>
