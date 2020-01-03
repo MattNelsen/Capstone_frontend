@@ -20,10 +20,7 @@
       </nav>
       <!-- ... -->
     </header>
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmYpY_4ygW5LwbCx9l0pchLCrG5oOAhK3eSmFDkFcCN6Ikk-nu&s"
-      alt=""
-    />
+    <img src="https://media2.fdncms.com/stranger/imager/u/large/41650363/bpp_2019_011mag.jpg" style="width:975px" />
     <!--/header-->
 
     <router-view />
@@ -45,6 +42,9 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 </style>
