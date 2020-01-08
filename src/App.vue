@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <span class="badge badge-warning">Must be 21+ years of age to view this website</span>
     <div class="about">
       <h1>Appy Hour</h1>
     </div>
@@ -8,7 +9,7 @@
         <ul>
           <li class="current"><a href="index.html">Home</a></li>
           <li>
-            <a href="#">About me</a>
+            <router-link v-bind:to="`/About/${about}`">About me</router-link>
           </li>
           <li>
             <a href="#">Neighborhoods</a>
@@ -18,9 +19,10 @@
           </li>
         </ul>
       </nav>
+
       <!-- ... -->
     </header>
-    <img src="https://media2.fdncms.com/stranger/imager/u/large/41650363/bpp_2019_011mag.jpg" style="width:975px" />
+    <!--     <img src="https://media2.fdncms.com/stranger/imager/u/large/41650363/bpp_2019_011mag.jpg" style="width:800px" /> -->
     <!--/header-->
 
     <router-view />
