@@ -3,6 +3,7 @@
     <h1>All Neighborhoods</h1>
     <div v-for="neighborhood in neighborhoods">
       <h2>{{ neighborhood.name }}</h2>
+      <h3>All Bars</h3>
       <button v-on:click="showBar(bar)">Show Bars</button>
       <div v-if="currentBar === bar"></div>
     </div>

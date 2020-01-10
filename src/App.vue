@@ -8,9 +8,16 @@
       <nav id="nav">
         <ul>
           <li class="current"><a href="index.html">Home</a></li>
+          <li></li>
           <li>
-            <router-link v-bind:to="`/About/${about}`">About me</router-link>
+            <a href="/signup">Signup</a>
           </li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/logout">Logout</a></li>
+          <li>
+            <a href="#">About Me</a>
+          </li>
+
           <li>
             <a href="#">Neighborhoods</a>
           </li>
