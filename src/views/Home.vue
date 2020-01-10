@@ -4,8 +4,11 @@
     <div v-for="neighborhood in neighborhoods">
       <h2>{{ neighborhood.name }}</h2>
       <h3>All Bars</h3>
-      <button v-on:click="showBar(bar)">Show Bars</button>
-      <div v-if="currentBar === bar"></div>
+      <div v-for="bar in neighborhood.bars">
+        <h4>{{ bar.name }}</h4>
+        <button v-on:click="showBar(bar)">More info</button>
+        <div v-if="currentBar === bar"></div>
+      </div>
     </div>
   </div>
 </template>

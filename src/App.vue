@@ -7,7 +7,7 @@
     <header id="header">
       <nav id="nav">
         <ul>
-          <li class="current"><a href="index.html">Home</a></li>
+          <li class="current"><a href="/home">Home</a></li>
           <li></li>
           <li>
             <a href="/signup">Signup</a>
@@ -15,14 +15,14 @@
           <li><a href="/login">Login</a></li>
           <li><a href="/logout">Logout</a></li>
           <li>
-            <a href="#">About Me</a>
+            <a href="/about">About Me</a>
           </li>
 
           <li>
-            <a href="#">Neighborhoods</a>
+            <a href="/neighborhoods">Neighborhoods</a>
           </li>
           <li>
-            <a href="#">Bars</a>
+            <a href="/bars">Bars</a>
           </li>
         </ul>
       </nav>
