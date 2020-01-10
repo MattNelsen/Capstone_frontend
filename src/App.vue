@@ -17,19 +17,28 @@
           <li>
             <a href="/about">About Me</a>
           </li>
-
-          <li>
-            <a href="/neighborhoods">Neighborhoods</a>
-          </li>
-          <li>
-            <a href="/bars">Bars</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Neighborhoods
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Logan Square</a>
+              <a class="dropdown-item" href="#">Wicker Park</a>
+            </div>
           </li>
         </ul>
       </nav>
 
       <!-- ... -->
     </header>
-    <!--     <img src="https://media2.fdncms.com/stranger/imager/u/large/41650363/bpp_2019_011mag.jpg" style="width:800px" /> -->
     <!--/header-->
 
     <router-view />

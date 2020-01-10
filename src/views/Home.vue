@@ -7,7 +7,6 @@
       <div v-for="bar in neighborhood.bars">
         <h4>{{ bar.name }}</h4>
         <button v-on:click="showBar(bar)">More info</button>
-        <div v-if="currentBar === bar"></div>
       </div>
     </div>
   </div>
