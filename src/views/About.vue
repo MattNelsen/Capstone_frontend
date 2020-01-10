@@ -6,16 +6,24 @@
         alt=""
       />
     </div>
-    <h1>My name is Matt Nelsen</h1>
+    <h1>
+      I was influenced to create Appy Hour from my future brother-in-law before I was enrolled at Actualize. Appy Hour
+      was an idea that I believe has the ability to keep growing as more neighborhoods and bars continue to be added to
+      the app.
+    </h1>
   </div>
 </template>
 
 <style>
-img {
+#img {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 250px;
+  width: 300px;
+}
+h1 {
+  color: SteelBlue;
+  font-family: ariel;
 }
 </style>
 

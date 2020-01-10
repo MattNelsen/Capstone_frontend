@@ -1,9 +1,19 @@
 <template>
   <div id="app">
-    <span class="badge badge-warning">Must be 21+ years of age to view this website</span>
-    <div class="about">
-      <h1>Appy Hour</h1>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>You must be 21+ years of age to view this site</strong>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
     </div>
+    <div class="about"></div>
     <header id="header">
       <nav id="nav">
         <ul>

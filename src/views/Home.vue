@@ -1,5 +1,9 @@
 <template>
-  <div class="home">
+  <div id="home">
+    <img
+      src="https://plymouthmag.com/sites/default/files/styles/629w-scale/public/field/image/iStock-699144432.jpg?itok=BuzEZvbr"
+      alt=""
+    />
     <h1>All Neighborhoods</h1>
     <div v-for="neighborhood in neighborhoods">
       <h2>{{ neighborhood.name }}</h2>
@@ -13,8 +17,11 @@
 </template>
 
 <style>
-img {
-  width: 150px;
+#img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 </style>
 
