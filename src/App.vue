@@ -33,8 +33,8 @@
               Neighborhoods
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Logan Square</a>
-              <a class="dropdown-item" href="#">Wicker Park</a>
+              <a class="dropdown-item" href="/logansquare">Logan Square</a>
+              <a class="dropdown-item" href="/wickerpark">Wicker Park</a>
             </div>
           </li>
         </ul>
