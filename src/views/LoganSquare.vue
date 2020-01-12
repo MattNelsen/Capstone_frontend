@@ -2,6 +2,12 @@
   <div class="logansquare">
     <h1>{{ message }}</h1>
     <div id="map"></div>
+    <img
+      src="https://cdn.vox-cdn.com/thumbor/UAh8VjrwQNzQQ880uANp-7v4qLE=/0x0:2048x1365/1200x800/filters:focal(861x520:1187x846)/cdn.vox-cdn.com/uploads/chorus_image/image/57954839/27211487959_893cd4d20b_k.0.jpg"
+      alt=""
+      width="1450"
+      height="500"
+    />
   </div>
 </template>
 

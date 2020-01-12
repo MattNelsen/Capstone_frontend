@@ -2,6 +2,12 @@
   <div class="wickerpark">
     <h1>{{ message }}</h1>
     <div id="map"></div>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/View_of_the_Flat_Iron_Arts_Building_from_the_Coyote_Tower_%285266790849%29.jpg/1920px-View_of_the_Flat_Iron_Arts_Building_from_the_Coyote_Tower_%285266790849%29.jpg"
+      alt=""
+      width="1450"
+      height="500"
+    />
   </div>
 </template>
 

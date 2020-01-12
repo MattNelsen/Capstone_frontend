@@ -9,6 +9,11 @@
     <h1>
       Appy Hour
       <span class="badge badge-secondary"></span>
+      <img
+        src="http://www.madeinchicago.org/wp-content/uploads/2014/07/MadeInChicago_Logo_Color.png"
+        alt=""
+        width="150"
+      />
     </h1>
     <div class="about"></div>
     <header id="header">

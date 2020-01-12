@@ -3,6 +3,8 @@
     <img
       src="https://plymouthmag.com/sites/default/files/styles/629w-scale/public/field/image/iStock-699144432.jpg?itok=BuzEZvbr"
       alt=""
+      width="1450"
+      height="775"
     />
     <h1>All Neighborhoods</h1>
     <div v-for="neighborhood in neighborhoods">
@@ -20,12 +22,7 @@
   </div>
 </template>
 
-<style>
-img {
-  width: 100%;
-  height: auto;
-}
-</style>
+<style></style>
 
 <script>
 import axios from "axios";
