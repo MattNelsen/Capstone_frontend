@@ -10,7 +10,11 @@
       <h3>All Bars</h3>
       <div v-for="bar in neighborhood.bars">
         <h4>{{ bar.name }}</h4>
-        <button v-on:click="showBar(bar)">More info</button>
+        <h5>All Specials ({{ bar.specials.length }})</h5>
+        <div v-for="special in bar.specials">
+          <h6>{{ special.description }}</h6>
+          <button v-on:click="currentSpecials = special">Special</button>
+        </div>
       </div>
     </div>
   </div>
@@ -34,7 +38,8 @@ export default {
     return {
       message: "Welcome to Appy Hour!!!",
       neighborhoods: [],
-      currentBar: {}
+      specials: [],
+      currentSpecial: {}
     };
   },
   created: function() {
@@ -43,11 +48,11 @@ export default {
     });
   },
   methods: {
-    showBar: function(bar) {
-      if (this.currentBar === bar) {
-        this.currentBar = {};
+    showSpecials: function(specials) {
+      if (this.currentSpecial === specials) {
+        this.currentSpecials = {};
       } else {
-        this.currentBar = bar;
+        this.currentSpecials = specials;
       }
     }
   }
