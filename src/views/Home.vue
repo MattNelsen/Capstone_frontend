@@ -4,7 +4,7 @@
       src="https://plymouthmag.com/sites/default/files/styles/629w-scale/public/field/image/iStock-699144432.jpg?itok=BuzEZvbr"
       alt=""
       width="1450"
-      height="775"
+      height="650"
     />
     <h1>All Neighborhoods</h1>
     <div v-for="neighborhood in neighborhoods">

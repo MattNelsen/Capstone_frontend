@@ -66,14 +66,6 @@
 h1 {
   text-shadow: 2px 2px 4px #000000;
   text-transform: uppercase;
-}
-#img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 8px;
-  max-width: 100%;
-  height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
 }
 </style>

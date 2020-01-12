@@ -16,10 +16,10 @@
 
 <style>
 #img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 h1 {
   color: SteelBlue;

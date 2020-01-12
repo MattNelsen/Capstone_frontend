@@ -27,7 +27,12 @@
 export default {
   data: function() {
     return {
-      message: "This will be the Wicker Park Page"
+      message:
+        "North Milwaukee Avenue is known for its bustling nightlife, dining and entertainment venues, with Double Door, Subterranean and Davenport’s setting the bar for the city's trendy music clubs. ",
+      places: [
+        { lat: -25.363, lng: 131.044, description: "A place in Australia" },
+        { lat: -33.8675, lng: 151.207, description: "The main city!" }
+      ]
     };
   },
   created: function() {},
@@ -42,18 +47,12 @@ export default {
       zoom: 13.5
     });
 
-    // create the popup
-    var popup = new mapboxgl.Popup({ offset: 25 }).setText("Construction on the Washington wickerpark began in 1848.");
+    // create the marker
+    var marker = new mapboxgl.Marker().setLngLat([-87.67, 41.91]).addTo(map);
 
     // create DOM element for the marker
     var el = document.createElement("div");
     el.id = "marker";
-
-    // create the marker
-    new mapboxgl.Marker(el)
-      .setLngLat(wickerpark)
-      .setPopup(popup) // sets a popup on this marker
-      .addTo(map);
   },
   methods: {}
 };

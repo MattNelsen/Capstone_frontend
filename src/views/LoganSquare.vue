@@ -39,7 +39,8 @@
 export default {
   data: function() {
     return {
-      message: "This will be the Logan Square Page"
+      message:
+        " North Milwaukee Avenue is the main commercial strip and features cool restaurants, cocktail bars and craft beer taverns. "
     };
   },
   created: function() {},
@@ -54,18 +55,12 @@ export default {
       zoom: 13.5
     });
 
-    // create the popup
-    var popup = new mapboxgl.Popup({ offset: 25 }).setText("Construction on the Washington logansquare began in 1848.");
+    // create the marker
+    var marker = new mapboxgl.Marker().setLngLat([-87.7074, 41.9177]).addTo(map);
 
     // create DOM element for the marker
     var el = document.createElement("div");
     el.id = "marker";
-
-    // create the marker
-    new mapboxgl.Marker(el)
-      .setLngLat(logansquare)
-      .setPopup(popup) // sets a popup on this marker
-      .addTo(map);
   },
   methods: {}
 };
