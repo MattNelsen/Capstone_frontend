@@ -10,10 +10,10 @@
       <h3>All Bars</h3>
       <div v-for="bar in neighborhood.bars">
         <h4>{{ bar.name }}</h4>
-        <h5>All Specials ({{ bar.specials.length }})</h5>
+        <h5>({{ bar.specials.length }})</h5>
         <div v-for="special in bar.specials">
+          <button v-on:click="special in bar.specials">Special</button>
           <h6>{{ special.description }}</h6>
-          <button v-on:click="currentSpecials = special">Special</button>
         </div>
       </div>
     </div>
@@ -21,12 +21,9 @@
 </template>
 
 <style>
-#img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: 100%;
+img {
+  width: 100%;
+  height: auto;
 }
 </style>
 

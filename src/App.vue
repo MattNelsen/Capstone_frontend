@@ -6,6 +6,10 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
+    <h1>
+      Appy Hour
+      <span class="badge badge-secondary"></span>
+    </h1>
     <div class="about"></div>
     <header id="header">
       <nav id="nav">
@@ -55,11 +59,10 @@
 
 <style>
 h1 {
-  color: tan;
-  font-family: Arial Narrow, Arial, sans-serif;
-  font-stretch: expanded;
+  text-shadow: 2px 2px 4px #000000;
+  text-transform: uppercase;
 }
-img {
+#img {
   display: block;
   margin-left: auto;
   margin-right: auto;
