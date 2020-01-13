@@ -6,11 +6,11 @@
         alt=""
       />
     </div>
-    <h1>
+    <h11>
       I was influenced to create Appy Hour from my future brother-in-law before I was enrolled at Actualize. Appy Hour
       was an idea that I believe has the ability to keep growing as more neighborhoods and bars continue to be added to
       the app.
-    </h1>
+    </h11>
   </div>
 </template>
 
@@ -21,7 +21,7 @@
   margin-right: auto;
   width: 50%;
 }
-h1 {
+#h11 {
   color: SteelBlue;
   font-family: ariel;
 }

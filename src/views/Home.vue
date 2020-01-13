@@ -6,13 +6,13 @@
       width="1450"
       height="650"
     />
-    <h1>All Neighborhoods</h1>
+    <h6>All Neighborhoods</h6>
     <div v-for="neighborhood in neighborhoods">
-      <h2>{{ neighborhood.name }}</h2>
-      <h3>All Bars</h3>
+      <h7>{{ neighborhood.name }}</h7>
+      <h8>All Bars</h8>
       <div v-for="bar in neighborhood.bars">
-        <h4>{{ bar.name }}</h4>
-        <h5>({{ bar.specials.length }})</h5>
+        <h9>{{ bar.name }}</h9>
+        <h10>({{ bar.specials.length }})</h10>
         <div v-for="special in bar.specials">
           <button v-on:click="special in bar.specials">Special</button>
           <h6>{{ special.description }}</h6>

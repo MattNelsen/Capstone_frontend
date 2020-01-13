@@ -1,6 +1,6 @@
 <template>
   <div class="wickerpark">
-    <h1>{{ message }}</h1>
+    <h2>{{ message }}</h2>
     <div id="map"></div>
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/View_of_the_Flat_Iron_Arts_Building_from_the_Coyote_Tower_%285266790849%29.jpg/1920px-View_of_the_Flat_Iron_Arts_Building_from_the_Coyote_Tower_%285266790849%29.jpg"
