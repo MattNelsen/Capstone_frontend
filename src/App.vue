@@ -5,7 +5,7 @@
         src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F39804873%2F7178205149%2F1%2Foriginal.jpg?s=ed4a95a0e73357a0292be11512587c68"
         alt=""
         width="100%"
-        height="350"
+        height="300"
       />
       <span class="badge badge-secondary"></span>
     </h1>
@@ -31,6 +31,8 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="/logansquare">Logan Square</a>
             <a class="dropdown-item" href="/wickerpark">Wicker Park</a>
+            <a class="dropdown-item" href="/rivernorth">River North</a>
+            <a class="dropdown-item" href="/lakeview">Lakeview</a>
           </div>
         </li>
         <li class="nav-item"></li>
@@ -48,7 +50,7 @@
         </li>
         |
         <li>
-          <a href="/logout">Logout</a>
+          <a href="/home">Logout</a>
         </li>
         |
         <li></li>
@@ -57,6 +59,24 @@
           alt=""
           width="100"
         />
+        <li></li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+
+        <li>
+          <img
+            src="https://d1vki863cvir6c.cloudfront.net/uploads/topic/image/93/Course_Report_profile_photo_800px_by_800px.jpg"
+            alt=""
+            width="45"
+          />
+        </li>
+        <li>
+          <img src="https://png.pngtree.com/element_our/md/20180626/md_5b322281773f5.jpg" alt="" width="45" />
+        </li>
+        <li>
+          <img src="https://png.pngtree.com/element_our/md/20180626/md_5b32227feb591.jpg" alt="" width="45" />
+        </li>
       </ul>
     </nav>
 
@@ -74,6 +94,9 @@
 </template>
 
 <style>
+#app {
+  background-color: skyblue;
+}
 h1 {
   text-shadow: 2px 2px 4px #000000;
   text-transform: uppercase;

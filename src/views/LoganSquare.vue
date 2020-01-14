@@ -1,7 +1,7 @@
 <template>
   <div class="logansquare">
-    <h5>{{ message }}</h5>
     <div id="map"></div>
+    <h5>{{ message }}</h5>
     <img
       src="https://cdn.vox-cdn.com/thumbor/UAh8VjrwQNzQQ880uANp-7v4qLE=/0x0:2048x1365/1200x800/filters:focal(861x520:1187x846)/cdn.vox-cdn.com/uploads/chorus_image/image/57954839/27211487959_893cd4d20b_k.0.jpg"
       alt=""
@@ -47,12 +47,12 @@ export default {
   mounted: function() {
     mapboxgl.accessToken =
       "pk.eyJ1IjoibWF0dG5lbHNlbjUiLCJhIjoiY2s1Yjg0cnh0MG1qYjNrcnpjYW52dHhjNiJ9.oP09KRf6xW5bimDss-x0xA";
-    var logansquare = [-87.7, 41.92];
+    var logansquare = [-87.7068, 41.9277];
     var map = new mapboxgl.Map({
       container: "map",
       style: "mapbox://styles/mapbox/light-v10",
       center: logansquare,
-      zoom: 12
+      zoom: 12.5
     });
 
     // create the marker
@@ -60,7 +60,9 @@ export default {
     var lostlakemarker = new mapboxgl.Marker().setLngLat([-87.7071, 41.9321]).addTo(map);
     var spiltmilkmarker = new mapboxgl.Marker().setLngLat([-87.6972, 41.935]).addTo(map);
     var bestintentionsmarker = new mapboxgl.Marker().setLngLat([-87.71072, 41.9171]).addTo(map);
-    var parkandfieldmarker5 = new mapboxgl.Marker().setLngLat([-87.7145, 41.9244]).addTo(map);
+    var parkandfieldmarker = new mapboxgl.Marker().setLngLat([-87.7145, 41.9244]).addTo(map);
+    var dosurbanmarker = new mapboxgl.Marker().setLngLat([-87.6984, 41.9173]).addTo(map);
+    var parkandfieldmarker5 = new mapboxgl.Marker().setLngLat([-87.701, 41.9254]).addTo(map);
 
     // create DOM element for the marker
     var el = document.createElement("div");
