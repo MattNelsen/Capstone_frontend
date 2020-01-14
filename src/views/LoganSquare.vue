@@ -52,11 +52,15 @@ export default {
       container: "map",
       style: "mapbox://styles/mapbox/light-v10",
       center: logansquare,
-      zoom: 13.5
+      zoom: 12
     });
 
     // create the marker
-    var marker = new mapboxgl.Marker().setLngLat([-87.7074, 41.9177]).addTo(map);
+    var moonlightermarker = new mapboxgl.Marker().setLngLat([-87.7074, 41.9177]).addTo(map);
+    var lostlakemarker = new mapboxgl.Marker().setLngLat([-87.7071, 41.9321]).addTo(map);
+    var spiltmilkmarker = new mapboxgl.Marker().setLngLat([-87.6972, 41.935]).addTo(map);
+    var bestintentionsmarker = new mapboxgl.Marker().setLngLat([-87.71072, 41.9171]).addTo(map);
+    var parkandfieldmarker5 = new mapboxgl.Marker().setLngLat([-87.7145, 41.9244]).addTo(map);
 
     // create DOM element for the marker
     var el = document.createElement("div");
