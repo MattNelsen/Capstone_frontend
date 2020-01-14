@@ -8,6 +8,8 @@ import About from "../views/About.vue";
 import Neighborhood from "../views/Neighborhood.vue";
 import WickerPark from "../views/WickerPark.vue";
 import LoganSquare from "../views/LoganSquare.vue";
+import RiverNorth from "../views/RiverNorth.vue";
+import Lakeview from "../views/Lakeview.vue";
 
 Vue.use(VueRouter);
 
@@ -19,7 +21,9 @@ const routes = [
   { path: "/about", name: "about", component: About },
   { path: "/neighborhood", name: "neighborhood", component: Neighborhood },
   { path: "/wickerpark", name: "wickerpark", component: WickerPark },
-  { path: "/logansquare", name: "logansquare", component: LoganSquare }
+  { path: "/logansquare", name: "logansquare", component: LoganSquare },
+  { path: "/rivernorth", name: "rivernorth", component: RiverNorth },
+  { path: "/lakeview", name: "lakeview", component: Lakeview }
 ];
 
 const router = new VueRouter({

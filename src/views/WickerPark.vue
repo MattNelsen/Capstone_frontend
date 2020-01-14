@@ -2,12 +2,7 @@
   <div class="wickerpark">
     <div id="map"></div>
     <h2>{{ message }}</h2>
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/View_of_the_Flat_Iron_Arts_Building_from_the_Coyote_Tower_%285266790849%29.jpg/1920px-View_of_the_Flat_Iron_Arts_Building_from_the_Coyote_Tower_%285266790849%29.jpg"
-      alt=""
-      width="1450"
-      height="500"
-    />
+    <img src="http://habitatcsn.files.wordpress.com/2012/01/wicker1.png" alt="" width="1450" height="500" />
   </div>
 </template>
 
