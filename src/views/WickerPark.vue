@@ -52,7 +52,6 @@ export default {
     // create DOM element for the marker
     var el = document.createElement("div");
     el.id = "marker";
-    // create the marker
   },
   methods: {}
 };

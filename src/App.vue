@@ -1,27 +1,13 @@
 <template>
   <div id="app">
     <h1>
-      Appy Hour
+      <img
+        src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F39804873%2F7178205149%2F1%2Foriginal.jpg?s=ed4a95a0e73357a0292be11512587c68"
+        alt=""
+        width="100%"
+        height="350"
+      />
       <span class="badge badge-secondary"></span>
-
-      <ul class="nav justify-content-center">
-        <li class="nav-item"></li>
-        <li></li>
-        <li>
-          |
-          <a href="/signup">Sign up</a>
-          |
-        </li>
-        <li>
-          <a href="/login">Login</a>
-        </li>
-        |
-        <li>
-          <a href="/logout">Logout</a>
-        </li>
-        |
-        <li></li>
-      </ul>
     </h1>
     <nav id="nav">
       <ul>
@@ -47,6 +33,30 @@
             <a class="dropdown-item" href="/wickerpark">Wicker Park</a>
           </div>
         </li>
+        <li class="nav-item"></li>
+        <img
+          src="https://res.cloudinary.com/teepublic/image/private/s--AnJelcOE--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1559853739/production/designs/5009220_0.jpg"
+          alt=""
+          width="100"
+        />
+        <li></li>
+        <li>
+          <a href="/signup">Sign up</a>
+        </li>
+        <li>
+          <a href="/login">Login</a>
+        </li>
+        |
+        <li>
+          <a href="/logout">Logout</a>
+        </li>
+        |
+        <li></li>
+        <img
+          src="https://res.cloudinary.com/teepublic/image/private/s--AnJelcOE--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1559853739/production/designs/5009220_0.jpg"
+          alt=""
+          width="100"
+        />
       </ul>
     </nav>
 
@@ -67,7 +77,6 @@
 h1 {
   text-shadow: 2px 2px 4px #000000;
   text-transform: uppercase;
-  background-image: url(http://www.theperfectspotsf.com/wp02/theperfectspotsf/public_html/wp02/wp-content/uploads/2013/07/Mikkeller-Bar-brick.jpg);
   color: SteelBlue;
 }
 </style>
