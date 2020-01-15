@@ -29,10 +29,10 @@
             Neighborhoods
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/logansquare">Logan Square</a>
-            <a class="dropdown-item" href="/wickerpark">Wicker Park</a>
-            <a class="dropdown-item" href="/rivernorth">River North</a>
-            <a class="dropdown-item" href="/lakeview">Lakeview</a>
+            <a class="dropdown-item" href="/neighborhoods/1">Logan Square</a>
+            <a class="dropdown-item" href="/neighborhoods/2">Wicker Park</a>
+            <a class="dropdown-item" href="/neighborhoods/3">River North</a>
+            <a class="dropdown-item" href="/neighborhoods/4">Lakeview</a>
           </div>
         </li>
         <li class="nav-item"></li>

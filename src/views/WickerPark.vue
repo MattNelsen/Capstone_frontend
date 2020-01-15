@@ -10,7 +10,7 @@
 .wickerpark {
   position: relative;
   text-align: center;
-  color: white;
+  color: black;
 }
 .bottom-left {
   position: absolute;
@@ -48,13 +48,38 @@ export default {
       center: [-87.67, 41.91],
       zoom: 13
     });
-    var northsidermarker = new mapboxgl.Marker().setLngLat([-87.6772, 41.9115]).addTo(map);
-    var chopshopmarker = new mapboxgl.Marker().setLngLat([-87.6788, 41.9102]).addTo(map);
-    var bangersandlacermarker = new mapboxgl.Marker().setLngLat([-87.671, 41.9034]).addTo(map);
-    var whiskeybusinessmarker = new mapboxgl.Marker().setLngLat([-87.6714, 41.9068]).addTo(map);
-    var easybarmarker = new mapboxgl.Marker().setLngLat([-87.6766, 41.9034]).addTo(map);
-    var remedymarker = new mapboxgl.Marker().setLngLat([-87.6866, 41.9162]).addTo(map);
-    var theflatironmarker = new mapboxgl.Marker().setLngLat([-87.6767, 41.91]).addTo(map);
+
+    // create the marker and popup
+    var northsiderpopup = new mapboxgl.Popup({ offset: 25 }).setText("northsider popup");
+    var northsidermarker = new mapboxgl.Marker()
+      .setLngLat([-87.6772, 41.9115])
+      .setPopup(northsiderpopup)
+      .addTo(map);
+    var chopshoppopup = new mapboxgl.Popup({ offset: 25 }).setText("chop shop popup");
+    var chopshopmarker = new mapboxgl.Marker()
+      .setLngLat([-87.6788, 41.9102])
+      .setPopup(chopshoppopup)
+      .addTo(map);
+    var bangersandlacepopup = new mapboxgl.Popup({ offset: 25 }).setText("bangers and lace popup");
+    var bangersandlacermarker = new mapboxgl.Marker()
+      .setLngLat([-87.671, 41.9034])
+      .setPopup(bangersandlacepopup)
+      .addTo(map);
+    var whiskeybusinesspopup = new mapboxgl.Popup({ offset: 25 }).setText("whiskey business popup");
+    var whiskeybusinessmarker = new mapboxgl.Marker()
+      .setLngLat([-87.6714, 41.9068])
+      .setPopup(whiskeybusinesspopup)
+      .addTo(map);
+    var easybarpopup = new mapboxgl.Popup({ offset: 25 }).setText("easy bar popup");
+    var easybarmarker = new mapboxgl.Marker()
+      .setLngLat([-87.6766, 41.9034])
+      .setPopup(easybarpopup)
+      .addTo(map);
+    var flatironpopup = new mapboxgl.Popup({ offset: 25 }).setText("flat iron popup");
+    var theflatironmarker = new mapboxgl.Marker()
+      .setLngLat([-87.6767, 41.91])
+      .setPopup(flatironpopup)
+      .addTo(map);
 
     // create DOM element for the marker
     var el = document.createElement("div");

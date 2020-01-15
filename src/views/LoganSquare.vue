@@ -8,6 +8,19 @@
       width="1450"
       height="500"
     />
+    <!--     <h6>All Neighborhoods</h6>
+    <div v-for="neighborhood in neighborhoods">
+      <h7>{{ neighborhood.name }}</h7>
+      <h8>All Bars</h8>
+      <div v-for="bar in neighborhood.bars">
+        <h9>{{ bar.name }}</h9>
+        <h10>({{ bar.specials.length }})</h10>
+        <div v-for="special in bar.specials">
+          <button v-on:click="special in bar.special">Special</button>
+          <h6>{{ special.description }}</h6>
+        </div>
+      </div>
+    </div> -->
   </div>
 </template>
 
@@ -40,7 +53,9 @@ export default {
   data: function() {
     return {
       message:
-        " North Milwaukee Avenue is the main commercial strip and features cool restaurants, cocktail bars and craft beer taverns. "
+        " North Milwaukee Avenue is the main commercial strip and features cool restaurants, cocktail bars and craft beer taverns. ",
+      neighborhoods: [],
+      specials: []
     };
   },
   created: function() {},
@@ -56,41 +71,44 @@ export default {
     });
 
     // create the marker and popup
-    var moonlighterpopup = new mapboxgl.Popup({ offset: 25 }).setText("moonlighter popup");
-    var moonlightermarker = new mapboxgl.Marker()
-      .setLngLat([-87.7074, 41.9177])
-      .setPopup(moonlighterpopup)
-      .addTo(map);
-    var lostlakepopup = new mapboxgl.Popup({ offset: 25 }).setText("lostlake popup");
-    var lostlakemarker = new mapboxgl.Marker()
-      .setLngLat([-87.7071, 41.9321])
-      .setPopup(lostlakepopup)
-      .addTo(map);
-    var spiltmilkpopup = new mapboxgl.Popup({ offset: 25 }).setText("spiltmilkpopup popup");
-    var spiltmilkmarker = new mapboxgl.Marker()
-      .setLngLat([-87.6972, 41.935])
-      .setPopup(spiltmilkpopup)
-      .addTo(map);
-    var bestintentionspopup = new mapboxgl.Popup({ offset: 25 }).setText("best intentions popup");
-    var bestintentionsmarker = new mapboxgl.Marker()
-      .setLngLat([-87.71072, 41.9171])
-      .setPopup(bestintentionspopup)
-      .addTo(map);
-    var parkandfieldpopup = new mapboxgl.Popup({ offset: 25 }).setText("park and field popup");
-    var parkandfieldmarker = new mapboxgl.Marker()
-      .setLngLat([-87.7145, 41.9244])
-      .setPopup(parkandfieldpopup)
-      .addTo(map);
-    var dosurbanpopup = new mapboxgl.Popup({ offset: 25 }).setText("dos urban popup");
-    var dosurbanmarker = new mapboxgl.Marker()
-      .setLngLat([-87.6984, 41.9173])
-      .setPopup(dosurbanpopup)
-      .addTo(map);
-    var remedypopup = new mapboxgl.Popup({ offset: 25 }).setText("remedy popup");
-    var remedymarker = new mapboxgl.Marker()
-      .setLngLat([-87.701, 41.9254])
-      .setPopup(remedypopup)
-      .addTo(map);
+
+    // this.specials.forEach(function(special) {
+    //
+    // var moonlighterpopup = new mapboxgl.Popup({ offset: 25 }).setText("specials in bars.description");
+    // var moonlightermarker = new mapboxgl.Marker()
+    //   .setLngLat([-87.7074, 41.9177])
+    //   .setPopup(moonlighterpopup)
+    //   .addTo(map);
+    // var lostlakepopup = new mapboxgl.Popup({ offset: 25 }).setText("lostlake popup");
+    // var lostlakemarker = new mapboxgl.Marker()
+    //   .setLngLat([-87.7071, 41.9321])
+    //   .setPopup(lostlakepopup)
+    //   .addTo(map);
+    // var spiltmilkpopup = new mapboxgl.Popup({ offset: 25 }).setText("spiltmilkpopup popup");
+    // var spiltmilkmarker = new mapboxgl.Marker()
+    //   .setLngLat([-87.6972, 41.935])
+    //   .setPopup(spiltmilkpopup)
+    //   .addTo(map);
+    // var bestintentionspopup = new mapboxgl.Popup({ offset: 25 }).setText("best intentions popup");
+    // var bestintentionsmarker = new mapboxgl.Marker()
+    //   .setLngLat([-87.71072, 41.9171])
+    //   .setPopup(bestintentionspopup)
+    //   .addTo(map);
+    // var parkandfieldpopup = new mapboxgl.Popup({ offset: 25 }).setText("park and field popup");
+    // var parkandfieldmarker = new mapboxgl.Marker()
+    //   .setLngLat([-87.7145, 41.9244])
+    //   .setPopup(parkandfieldpopup)
+    //   .addTo(map);
+    // var dosurbanpopup = new mapboxgl.Popup({ offset: 25 }).setText("dos urban popup");
+    // var dosurbanmarker = new mapboxgl.Marker()
+    //   .setLngLat([-87.6984, 41.9173])
+    //   .setPopup(dosurbanpopup)
+    //   .addTo(map);
+    // var remedypopup = new mapboxgl.Popup({ offset: 25 }).setText("remedy popup");
+    // var remedymarker = new mapboxgl.Marker()
+    //   .setLngLat([-87.701, 41.9254])
+    //   .setPopup(remedypopup)
+    //   .addTo(map);
 
     // create DOM element for the marker
     var el = document.createElement("div");
