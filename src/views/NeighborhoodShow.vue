@@ -1,39 +1,32 @@
 <template>
-  <div class="logansquare">
+  <div class="neighborhoodshow">
     <div id="map"></div>
-    <h5>{{ message }}</h5>
-    <img v-bind:src="neighborhood.image" alt="" width="1450" height="500" />
-    <!--     <h6>All Neighborhoods</h6>
-    <div v-for="neighborhood in neighborhoods">
-      <h7>{{ neighborhood.name }}</h7>
-      <h8>All Bars</h8>
-      <div v-for="bar in neighborhood.bars">
-        <h9>{{ bar.name }}</h9>
-        <h10>({{ bar.specials.length }})</h10>
-        <div v-for="special in bar.specials">
-          <button v-on:click="special in bar.special">Special</button>
-          <h6>{{ special.description }}</h6>
-        </div>
-      </div>
-    </div> -->
+    <img v-bind:src="neighborhood.image" alt="" width="100%" height="500" />
+    <div class="bottom-left">
+      "North Milwaukee Avenue is the main commercial strip and features cool restaurants, cocktail bars and craft beer
+      taverns."
+    </div>
   </div>
 </template>
 
 <style>
+.neighborhoodshow {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
 #map {
   /*position: absolute;*/
   /*top: 0;*/
   /*bottom: 0;*/
   /*width: 100%;*/
   height: 300px;
-}
-#marker {
-  background-image: url("https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg");
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
 }
 
 .mapboxgl-popup {
@@ -85,7 +78,7 @@ export default {
               container: "map",
               style: "mapbox://styles/mapbox/light-v10",
               center: feature.center,
-              zoom: 12.5
+              zoom: 12.75
             });
 
             // Get lat/lng of each bar in neighborhood
@@ -102,7 +95,11 @@ export default {
                   if (response && response.body && response.body.features && response.body.features.length) {
                     var feature = response.body.features[0];
                     // Make the popup
-                    var text = "<h6>Specials</h6>";
+                    var text = "<h6>Bar</h6>";
+                    bar.specials.forEach(special => {
+                      text += `<div>${bar.name}</div>`;
+                    });
+                    var text2 = "<h7>Specials</h7>";
                     bar.specials.forEach(special => {
                       text += `<div>${special.day_of_week}: ${special.description}</div>`;
                     });

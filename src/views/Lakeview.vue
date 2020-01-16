@@ -1,5 +1,6 @@
 <template>
   <div class="lakeview">
+    <h5>{{ message }}</h5>
     <div id="map"></div>
     <img
       src="https://cdn.choosechicago.com/uploads/2019/05/wrigleyville-1-1800x900.jpg"

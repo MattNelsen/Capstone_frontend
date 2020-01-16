@@ -1,28 +1,29 @@
 <template>
   <div id="home">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Welcome to Appy Hour!</h1>
+        <p class="lead">
+          The convenient spot to find that well deserved Happy Hour special you've been waiting all day for!
+        </p>
+      </div>
+    </div>
+
     <img
       src="https://plymouthmag.com/sites/default/files/styles/629w-scale/public/field/image/iStock-699144432.jpg?itok=BuzEZvbr"
       alt=""
-      width="1450"
-      height="650"
+      width="100%"
+      height="550"
     />
-    <h6>All Neighborhoods</h6>
-    <div v-for="neighborhood in neighborhoods">
-      <h7>{{ neighborhood.name }}</h7>
-      <h8>All Bars</h8>
-      <div v-for="bar in neighborhood.bars">
-        <h9>{{ bar.name }}</h9>
-        <h10>({{ bar.specials.length }})</h10>
-        <div v-for="special in bar.specials">
-          <button v-on:click="special in bar.specials">Special</button>
-          <h6>{{ special.description }}</h6>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
-<style></style>
+<style>
+.container {
+  color: red;
+  font-family: Ariel;
+}
+</style>
 
 <script>
 import axios from "axios";
@@ -30,10 +31,7 @@ import axios from "axios";
 export default {
   data: function() {
     return {
-      message: "Welcome to Appy Hour!!!",
-      neighborhoods: [],
-      specials: [],
-      currentSpecial: {}
+      message: "Welcome to Appy Hour!!!"
     };
   },
   created: function() {
@@ -41,14 +39,6 @@ export default {
       this.neighborhoods = response.data;
     });
   },
-  methods: {
-    showSpecials: function(specials) {
-      if (this.currentSpecial === specials) {
-        this.currentSpecials = {};
-      } else {
-        this.currentSpecials = specials;
-      }
-    }
-  }
+  methods: {}
 };
 </script>
