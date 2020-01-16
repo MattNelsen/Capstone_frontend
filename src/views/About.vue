@@ -22,7 +22,7 @@
   margin-right: auto;
   width: 20%;
 }
-.bio {
+#bio {
   color: Black;
   font-family: Courier, Monaco, monospace;
   font-weight: bold;

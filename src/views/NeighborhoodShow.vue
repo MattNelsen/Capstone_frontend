@@ -3,8 +3,7 @@
     <div id="map"></div>
     <img v-bind:src="neighborhood.image" alt="" width="100%" height="500" />
     <div class="bottom-left">
-      "North Milwaukee Avenue is the main commercial strip and features cool restaurants, cocktail bars and craft beer
-      taverns."
+      {{ neighborhood.description }}
     </div>
   </div>
 </template>
@@ -12,8 +11,8 @@
 <style>
 .neighborhoodshow {
   position: relative;
-  text-align: center;
   color: white;
+  text-align: left;
 }
 
 .bottom-left {
@@ -31,6 +30,7 @@
 
 .mapboxgl-popup {
   max-width: 200px;
+  color: black;
 }
 </style>
 
@@ -95,7 +95,7 @@ export default {
                   if (response && response.body && response.body.features && response.body.features.length) {
                     var feature = response.body.features[0];
                     // Make the popup
-                    var text = "<h6>Bar</h6>";
+                    var text = "";
                     bar.specials.forEach(special => {
                       text += `<div>${bar.name}</div>`;
                     });

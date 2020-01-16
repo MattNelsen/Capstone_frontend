@@ -33,6 +33,7 @@
             <a class="dropdown-item" href="/neighborhoods/2">Wicker Park</a>
             <a class="dropdown-item" href="/neighborhoods/3">River North</a>
             <a class="dropdown-item" href="/neighborhoods/4">Lakeview</a>
+            <a class="dropdown-item" href="/neighborhoods/5">Lincoln Park</a>
           </div>
         </li>
         <li class="nav-item"></li>
@@ -94,8 +95,11 @@
 </template>
 
 <style>
-#app {
-  background-color: skyblue;
+.dropdown-menu {
+  background-color: black !important;
+}
+.dropdown-item:hover {
+  color: black !important;
 }
 h1 {
   text-shadow: 2px 2px 4px #000000;
