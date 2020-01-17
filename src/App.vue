@@ -1,12 +1,6 @@
 <template>
   <div id="app">
     <h1>
-      <img
-        src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F39804873%2F7178205149%2F1%2Foriginal.jpg?s=ed4a95a0e73357a0292be11512587c68"
-        alt=""
-        width="100%"
-        height="300"
-      />
       <span class="badge badge-secondary"></span>
     </h1>
     <nav id="nav">
@@ -62,7 +56,10 @@
         />
         <li></li>
         <li>
-          <a href="/contact">Contact</a>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
         </li>
 
         <li>
@@ -71,12 +68,6 @@
             alt=""
             width="45"
           />
-        </li>
-        <li>
-          <img src="https://png.pngtree.com/element_our/md/20180626/md_5b322281773f5.jpg" alt="" width="45" />
-        </li>
-        <li>
-          <img src="https://png.pngtree.com/element_our/md/20180626/md_5b32227feb591.jpg" alt="" width="45" />
         </li>
       </ul>
     </nav>
