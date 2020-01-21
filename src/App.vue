@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <h1>
+    <h2>
       <span class="badge badge-secondary"></span>
-    </h1>
+    </h2>
     <nav id="nav">
       <ul>
         <li class="current"><a href="/home">Home</a></li>
@@ -86,15 +86,18 @@
 </template>
 
 <style>
+#app {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Tj9qWjDCwYb5xRdxu4ZHZGaOb-GTLHwoaxQDplyAr1ILRxIszA&s");
+}
 .dropdown-menu {
   background-color: black !important;
 }
 .dropdown-item:hover {
   color: black !important;
 }
-h1 {
+h2 {
   text-shadow: 2px 2px 4px #000000;
   text-transform: uppercase;
-  color: SteelBlue;
+  color: steelBlue;
 }
 </style>

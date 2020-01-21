@@ -3,7 +3,7 @@
     <div id="map"></div>
     <img v-bind:src="neighborhood.image" alt="" width="100%" height="500" />
     <div class="bottom-left">
-      {{ neighborhood.description }}
+      <h1>{{ neighborhood.description }}</h1>
     </div>
   </div>
 </template>
@@ -18,7 +18,13 @@
 .bottom-left {
   position: absolute;
   bottom: 8px;
-  left: 16px;
+  left: 5px;
+  width: 30em;
+  word-wrap: break-word;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  text-transform: uppercase;
 }
 #map {
   /*position: absolute;*/

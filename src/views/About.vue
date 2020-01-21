@@ -22,11 +22,13 @@
   margin-right: auto;
   width: 20%;
 }
-#bio {
-  color: Black;
+.bio {
+  color: white;
   font-family: Courier, Monaco, monospace;
   font-weight: bold;
   font-weight: 300;
+  text-indent: 50px;
+  text-align: justify;
 }
 </style>
 
