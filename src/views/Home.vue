@@ -2,6 +2,7 @@
   <div id="home">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
+        <img src="https://media0.giphy.com/media/uANVkGeJcYxEzwDXhU/source.gif" width="70" alt="" />
         <h2 class="display-4">Welcome to Appy Hour!</h2>
         <p class="lead">
           Choose a neighborhood || Find your bar || Enjoy the night
@@ -107,6 +108,10 @@
 </template>
 
 <style>
+h2 {
+  text-align: center;
+}
+
 .neighborhood-1 {
   float: left;
 }
@@ -135,6 +140,7 @@ a > img {
   color: red;
   font-family: sans;
   text-transform: uppercase;
+  text-align: center;
 }
 </style>
 
