@@ -84,7 +84,7 @@ export default {
               container: "map",
               style: "mapbox://styles/mapbox/light-v10",
               center: feature.center,
-              zoom: 12.75
+              zoom: 12.95
             });
 
             // Get lat/lng of each bar in neighborhood

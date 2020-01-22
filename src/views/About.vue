@@ -23,12 +23,14 @@
   width: 20%;
 }
 .bio {
-  color: white;
+  color: black;
   font-family: Courier, Monaco, monospace;
   font-weight: bold;
   font-weight: 300;
   text-indent: 50px;
   text-align: justify;
+  text-shadow: 2px 2px 4px #000000;
+  text-transform: uppercase;
 }
 </style>
 

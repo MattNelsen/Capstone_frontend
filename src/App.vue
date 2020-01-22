@@ -5,6 +5,11 @@
     </h2>
     <nav id="nav">
       <ul>
+        <li>
+          <h12>
+            Appy Hour
+          </h12>
+        </li>
         <li class="current"><a href="/home">Home</a></li>
         <li></li>
         <li>
@@ -86,6 +91,13 @@
 </template>
 
 <style>
+h12 {
+  color: white;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 51px;
+  text-shadow: 2px 2px #ff0000;
+}
 #app {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Tj9qWjDCwYb5xRdxu4ZHZGaOb-GTLHwoaxQDplyAr1ILRxIszA&s");
 }
