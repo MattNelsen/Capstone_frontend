@@ -13,6 +13,7 @@
   position: relative;
   color: white;
   text-align: left;
+  font-family: sans;
 }
 
 .bottom-left {

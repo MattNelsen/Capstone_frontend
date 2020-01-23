@@ -9,12 +9,10 @@
           <h12>
             Appy Hour
           </h12>
+          <img src="https://media0.giphy.com/media/XF4FH1c1WZRXltNcjM/giphy.gif" width="165" height="100" alt="" />
         </li>
         <li class="current"><a href="/home">Home</a></li>
         <li></li>
-        <li>
-          <a href="/about">About Me</a>
-        </li>
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"

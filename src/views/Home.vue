@@ -131,10 +131,13 @@ a > img {
 }
 
 .caption {
-  color: white;
+  font-family: sans;
+  color: black;
   text-transform: uppercase;
   text-align: center;
   text-decoration: underline;
+  border: 1px RosyBrown;
+  background-color: RosyBrown;
 }
 .container {
   color: red;
